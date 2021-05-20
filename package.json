@@ -1,12 +1,13 @@
 {
   "name": "swat-home-challenge",
   "version": "0.0.0",
+  "homepage": "http://WolfCanCode.github.io/swat-challenge",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "antd": "^4.15.6",
@@ -23,6 +24,7 @@
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.3.0",
     "vite": "^2.3.3"
   }
