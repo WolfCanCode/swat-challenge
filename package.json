@@ -7,7 +7,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "antd": "^4.15.6",
